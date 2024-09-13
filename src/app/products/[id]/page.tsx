@@ -67,7 +67,7 @@ const ProductDetail: React.FC<ProductDetailProps> = ({ params }) => {
               pagination={{ clickable: true }}
               spaceBetween={10}
               slidesPerView={1}
-              className="w-full h-96"
+              className="w-full"
             >
               {product.images.map((image:string, index:number) => (
                 <SwiperSlide key={index}>
