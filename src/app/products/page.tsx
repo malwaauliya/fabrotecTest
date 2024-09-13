@@ -101,7 +101,7 @@ const Products: React.FC = () => {
           )) : <p>There is no product</p>}
         </div>
         {/* Pagination Controls */}
-        {listProducts.length && (
+        {listProducts.length > 0 && (
           <div className="flex justify-between items-center mt-6">
             <button
               onClick={() => handlePageChange(currentPage - 1)}
