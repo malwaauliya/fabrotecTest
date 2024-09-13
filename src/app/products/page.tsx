@@ -48,7 +48,7 @@ const Products: React.FC = () => {
   const [sortOrder, setSortOrder] = useState<string | ''>('');
   const [currentPage, setCurrentPage] = useState<number>(1);
   const [totalPages, setTotalPages] = useState<number>(1);
-  const pageSize = 10; // Number of products per page
+  const pageSize = 20; // Number of products per page
   
   useEffect(() => {
     const fetchData = async () => {
